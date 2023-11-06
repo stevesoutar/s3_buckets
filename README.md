@@ -1,2 +1,1 @@
-# s3_buckets
-deploy a number of dummy s3 buckets
+# create a number of s3 buckets for testing purposes

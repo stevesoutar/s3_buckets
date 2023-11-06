@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "test_buckets" {
-  count = 85
+  count = 75
   bucket = "${count.index}-kxie4lidhfbgklvxbgklvjkdgowbecslvb-test-ipaas-bucket"
 
   tags = {
