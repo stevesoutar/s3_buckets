@@ -19,5 +19,14 @@ resource "aws_s3_bucket" "test_buckets" {
 
   tags = {
     ipaas_transfer_enabled = "read"
+    git_commit             = "1c756c3b2444c189903d55ed24f63add97fbf1f8"
+    git_file               = "terraform/main.tf"
+    git_last_modified_at   = "2023-11-06 19:37:12"
+    git_last_modified_by   = "steven.soutar@kingfisher.com"
+    git_modifiers          = "steven.soutar"
+    git_org                = "stevesoutar"
+    git_repo               = "s3_buckets"
+    yor_name               = "test_buckets"
+    yor_trace              = "a73385bc-8d3d-451c-a4dc-b0dbc1c7daa6"
   }
 }
