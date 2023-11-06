@@ -12,6 +12,8 @@ s3_buckets
 
 2 directories, 6 files
 ```
+
+## TFPlan
 In order to make it easier to review the TF plan, or to supply the plan as an artifact in a commit, or a change request,
  I have set up a simple command alias
 
@@ -32,6 +34,7 @@ terraform plan -out=tf.plan
 
 to review the plan, just type the command `tfplan`
 
+## Pre-commit githooks
 This project also has pre-commit hooks configured. To use them, simply install the pre-commit package
 by following the instructions here - https://pre-commit.com/
 
@@ -47,3 +50,15 @@ To test it ...
 ```bash
 pre-commit run --all-files
 ```
+## Yor - infrastructure tags
+
+Yor tagging (from bridgecrew, available at https://yor.io/) has been run manually (ideally this should be run as part
+ of a CI/CD pipeline on every deployment)
+
+This is the command to be used (hint: run from the project root directory, to catch all deployable objects)
+```bash
+yor tag -d .
+```
+
+This will update any terraform blocks that will deploy objects to the cloud - add & commit the updated files, then
+ deploy the updated tags to your infrastructure
