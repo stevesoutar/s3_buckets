@@ -27,12 +27,20 @@ The plan file is called `tf.plan`
 alias tfplan='terraform show  tf.plan > tfplan.ansi && less tfplan.ansi'
 ```
 
-Then run commands like this
+Then run your terraform commands, like this
 ```bash
+terraform init
 terraform plan -out=tf.plan
 ```
 
-to review the plan, just type the command `tfplan`
+to review the plan, just type the command `tfplan` - then you can apply the plan
+```bash
+# review
+tfplan
+
+# apply
+terraform apply tf.plan
+```
 
 ## Pre-commit githooks
 This project also has pre-commit hooks configured. To use them, simply install the pre-commit package
