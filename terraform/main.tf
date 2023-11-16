@@ -20,7 +20,7 @@ resource "random_id" "bucket_names" {
 
 resource "aws_s3_bucket" "test_buckets" {
   count  = var.bucket_count
-  bucket = "${random_id.bucket_names.*.dec[count.index]}--test-ipaas-bucket"
+  bucket = "${random_id.bucket_names.*.hex[count.index]}-test-ipaas-bucket"
 
   tags = {
     ipaas_transfer_enabled = var.read_or_write
