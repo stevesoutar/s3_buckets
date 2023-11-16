@@ -6,6 +6,11 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.5"
+    }
   }
 }
 
@@ -13,13 +18,15 @@ provider "aws" {
   region = "eu-west-1"
 }
 
+# tflint-ignore: terraform_required_providers
 resource "random_id" "bucket_names" {
-  count = var.bucket_count
+  count       = var.bucket_count
   byte_length = 4
 }
 
 resource "aws_s3_bucket" "test_buckets" {
-  count  = var.bucket_count
+  count = var.bucket_count
+  # tflint-ignore: terraform_deprecated_index
   bucket = "${random_id.bucket_names.*.hex[count.index]}-test-ipaas-bucket"
 
   tags = {
