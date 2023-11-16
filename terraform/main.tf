@@ -13,9 +13,14 @@ provider "aws" {
   region = "eu-west-1"
 }
 
+resource "random_id" "bucket_names" {
+  count = var.bucket_count
+  byte_length = 4
+}
+
 resource "aws_s3_bucket" "test_buckets" {
   count  = var.bucket_count
-  bucket = "${count.index}-kxie4lidhfbgklvxbgklvjkdgowbecslvb-test-ipaas-bucket"
+  bucket = "${random_id.bucket_names.*.dec[count.index]}--test-ipaas-bucket"
 
   tags = {
     ipaas_transfer_enabled = var.read_or_write
