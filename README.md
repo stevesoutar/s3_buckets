@@ -5,12 +5,15 @@ s3_buckets
         ├── LICENSE
         ├── README.md
         └── terraform
-            ├── main.tf
-            ├── terraform.tfstate
-            ├── terraform.tfstate.backup
-            └── tf.plan
+                ├── README.md
+                ├── buckets.tfvars
+                ├── main.tf
+                ├── outputs.tf
+                ├── terraform.tfstate
+                ├── terraform.tfstate.backup
+                └── variables.tf
 
-2 directories, 6 files
+2 directories, 9 files
 ```
 
 ## TFPlan
