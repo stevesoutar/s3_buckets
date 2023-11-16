@@ -1,0 +1,117 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+
+Terraform will perform the following actions:
+
+[1m  # aws_s3_bucket.test_buckets[10][0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket" "test_buckets" {
+      [32m+[0m[0m acceleration_status         = (known after apply)
+      [32m+[0m[0m acl                         = (known after apply)
+      [32m+[0m[0m arn                         = (known after apply)
+      [32m+[0m[0m bucket                      = (known after apply)
+      [32m+[0m[0m bucket_domain_name          = (known after apply)
+      [32m+[0m[0m bucket_prefix               = (known after apply)
+      [32m+[0m[0m bucket_regional_domain_name = (known after apply)
+      [32m+[0m[0m force_destroy               = false
+      [32m+[0m[0m hosted_zone_id              = (known after apply)
+      [32m+[0m[0m id                          = (known after apply)
+      [32m+[0m[0m object_lock_enabled         = (known after apply)
+      [32m+[0m[0m policy                      = (known after apply)
+      [32m+[0m[0m region                      = (known after apply)
+      [32m+[0m[0m request_payer               = (known after apply)
+      [32m+[0m[0m tags                        = {
+          [32m+[0m[0m "git_commit"             = "c13273d184d87785ebcf4e8414e9d61183062799"
+          [32m+[0m[0m "git_file"               = "tests/terraform/main.tf"
+          [32m+[0m[0m "git_last_modified_at"   = "2023-11-08 12:50:23"
+          [32m+[0m[0m "git_last_modified_by"   = "steven.soutar@kingfisher.com"
+          [32m+[0m[0m "git_modifiers"          = "steven.soutar"
+          [32m+[0m[0m "git_org"                = "group_iaas"
+          [32m+[0m[0m "git_repo"               = "customer-applications/ipaas_cross_account_iam_role"
+          [32m+[0m[0m "ipaas_transfer_enabled" = "read"
+          [32m+[0m[0m "yor_name"               = "test_buckets"
+          [32m+[0m[0m "yor_trace"              = "8e461766-a84c-408b-93c8-64b2c855e817"
+        }
+      [32m+[0m[0m tags_all                    = {
+          [32m+[0m[0m "git_commit"             = "c13273d184d87785ebcf4e8414e9d61183062799"
+          [32m+[0m[0m "git_file"               = "tests/terraform/main.tf"
+          [32m+[0m[0m "git_last_modified_at"   = "2023-11-08 12:50:23"
+          [32m+[0m[0m "git_last_modified_by"   = "steven.soutar@kingfisher.com"
+          [32m+[0m[0m "git_modifiers"          = "steven.soutar"
+          [32m+[0m[0m "git_org"                = "group_iaas"
+          [32m+[0m[0m "git_repo"               = "customer-applications/ipaas_cross_account_iam_role"
+          [32m+[0m[0m "ipaas_transfer_enabled" = "read"
+          [32m+[0m[0m "yor_name"               = "test_buckets"
+          [32m+[0m[0m "yor_trace"              = "8e461766-a84c-408b-93c8-64b2c855e817"
+        }
+      [32m+[0m[0m website_domain              = (known after apply)
+      [32m+[0m[0m website_endpoint            = (known after apply)
+    }
+
+[1m  # aws_s3_bucket.test_buckets[11][0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket" "test_buckets" {
+      [32m+[0m[0m acceleration_status         = (known after apply)
+      [32m+[0m[0m acl                         = (known after apply)
+      [32m+[0m[0m arn                         = (known after apply)
+      [32m+[0m[0m bucket                      = (known after apply)
+      [32m+[0m[0m bucket_domain_name          = (known after apply)
+      [32m+[0m[0m bucket_prefix               = (known after apply)
+      [32m+[0m[0m bucket_regional_domain_name = (known after apply)
+      [32m+[0m[0m force_destroy               = false
+      [32m+[0m[0m hosted_zone_id              = (known after apply)
+      [32m+[0m[0m id                          = (known after apply)
+      [32m+[0m[0m object_lock_enabled         = (known after apply)
+      [32m+[0m[0m policy                      = (known after apply)
+      [32m+[0m[0m region                      = (known after apply)
+      [32m+[0m[0m request_payer               = (known after apply)
+      [32m+[0m[0m tags                        = {
+          [32m+[0m[0m "git_commit"             = "c13273d184d87785ebcf4e8414e9d61183062799"
+          [32m+[0m[0m "git_file"               = "tests/terraform/main.tf"
+          [32m+[0m[0m "git_last_modified_at"   = "2023-11-08 12:50:23"
+          [32m+[0m[0m "git_last_modified_by"   = "steven.soutar@kingfisher.com"
+          [32m+[0m[0m "git_modifiers"          = "steven.soutar"
+          [32m+[0m[0m "git_org"                = "group_iaas"
+          [32m+[0m[0m "git_repo"               = "customer-applications/ipaas_cross_account_iam_role"
+          [32m+[0m[0m "ipaas_transfer_enabled" = "read"
+          [32m+[0m[0m "yor_name"               = "test_buckets"
+          [32m+[0m[0m "yor_trace"              = "8e461766-a84c-408b-93c8-64b2c855e817"
+        }
+      [32m+[0m[0m tags_all                    = {
+          [32m+[0m[0m "git_commit"             = "c13273d184d87785ebcf4e8414e9d61183062799"
+          [32m+[0m[0m "git_file"               = "tests/terraform/main.tf"
+          [32m+[0m[0m "git_last_modified_at"   = "2023-11-08 12:50:23"
+          [32m+[0m[0m "git_last_modified_by"   = "steven.soutar@kingfisher.com"
+          [32m+[0m[0m "git_modifiers"          = "steven.soutar"
+          [32m+[0m[0m "git_org"                = "group_iaas"
+          [32m+[0m[0m "git_repo"               = "customer-applications/ipaas_cross_account_iam_role"
+          [32m+[0m[0m "ipaas_transfer_enabled" = "read"
+          [32m+[0m[0m "yor_name"               = "test_buckets"
+          [32m+[0m[0m "yor_trace"              = "8e461766-a84c-408b-93c8-64b2c855e817"
+        }
+      [32m+[0m[0m website_domain              = (known after apply)
+      [32m+[0m[0m website_endpoint            = (known after apply)
+    }
+
+[1m  # random_id.bucket_names[10][0m will be created
+[0m  [32m+[0m[0m resource "random_id" "bucket_names" {
+      [32m+[0m[0m b64_std     = (known after apply)
+      [32m+[0m[0m b64_url     = (known after apply)
+      [32m+[0m[0m byte_length = 4
+      [32m+[0m[0m dec         = (known after apply)
+      [32m+[0m[0m hex         = (known after apply)
+      [32m+[0m[0m id          = (known after apply)
+    }
+
+[1m  # random_id.bucket_names[11][0m will be created
+[0m  [32m+[0m[0m resource "random_id" "bucket_names" {
+      [32m+[0m[0m b64_std     = (known after apply)
+      [32m+[0m[0m b64_url     = (known after apply)
+      [32m+[0m[0m byte_length = 4
+      [32m+[0m[0m dec         = (known after apply)
+      [32m+[0m[0m hex         = (known after apply)
+      [32m+[0m[0m id          = (known after apply)
+    }
+
+[1mPlan:[0m 4 to add, 0 to change, 0 to destroy.
+[0m
